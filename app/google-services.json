@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "257911651395",
+    "firebase_url": "https://ngangainc-ab051.firebaseio.com",
+    "project_id": "ngangainc-ab051",
+    "storage_bucket": "ngangainc-ab051.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257911651395:android:533d5768bddc0f09",
+        "android_client_info": {
+          "package_name": "com.example.ngangainc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257911651395-l05cc4lirie27putsrcjca6q16pa4lbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA3BpMftQHrLj227JVhjDmehN-nGdR3n4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257911651395-l05cc4lirie27putsrcjca6q16pa4lbv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
