@@ -64,7 +64,7 @@ public class ChatroomActivity extends AppCompatActivity {
         mListView = (ListView) findViewById(R.id.listView);
         mMessage = (EditText) findViewById(R.id.input_message);
         mCheckmark = (ImageView) findViewById(R.id.checkmark);
-        getSupportActionBar().hide();
+       // getSupportActionBar().hide();
         Log.d(TAG, "onCreate: started.");
         mMessagesList = new ArrayList<>();
 

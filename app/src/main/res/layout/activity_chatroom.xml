@@ -6,9 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ChatroomActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/rl"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
@@ -28,6 +33,54 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_chatroom" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@+id/rl">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:divider="@null">
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/grey_border_top">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_checkmark"
+            android:id="@+id/checkmark"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/input_message"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/checkmark"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:hint="new message..."
+            android:textColor="@color/Black"
+            android:layout_marginLeft="5dp"/>
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <!--<include layout="@layout/content_chatroom" />-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

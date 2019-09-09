@@ -14,17 +14,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AdminActivity"></activity>
+
+        <service
+            android:name=".utility.MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- <service -->
+        <!-- android:name=".utility.MyFirebaseInstanceIDService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
         <activity
             android:name=".ChatroomActivity"
             android:label="@string/title_activity_chatroom"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".ChatActivity"
-            android:label="@string/title_activity_chat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SignedInActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".ChatActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
